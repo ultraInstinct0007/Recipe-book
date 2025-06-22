@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="search-container">
+        <h1 class="recipe-book">Recipe Book</h1>
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Enter Recipe name" spellcheck="false">
+            <button onclick="searchRecipe()"> <img src="search it.png"> </button>
+        </div>
+
+        <div class="recipe-controls">
+            <a href="Add-recipe.html"><button class="add-recipe">Add Recipe</button></a>
+
+            <button id="showAllBtn" class="add-recipe">Show All Recipes</button>
+
+
+        </div>
+
+
+    </div>
+
+    <div id="searchResult"></div>
+
+    <h1 class="dishes" id="dish-title">Featured Dishes</h1>
+    <div class="card-container" id="featuredDishes">
+        <div class="card1">
+            <img src="paneer-tikka-masala.jpg" alt="Paneer Tikka Masala">
+            <h3 class="recipe-title">Paneer Tikka Masala</h3>
+            <p class="recipe-description">
+                A rich and creamy tomato-based curry with marinated paneer cubes, grilled to perfection.
+            </p>
+            <button class="view-button" onclick="viewRecipe('Paneer Tikka Masala')">View Recipe</button>
+        </div>
+
+        <div class="card2">
+            <img src="biryani.jpg" alt="Puranpoli">
+            <h3 class="recipe-title">Biryani</h3>
+            <p class="recipe-description">
+               A world renowned rice dish loved by people mainly eaten in India and indian subcontinent 
+            </p>
+            <button class="view-button" onclick="viewRecipe('Biryani')">View Recipe</button>
+        </div>
+
+        <div class="card3">
+            <img src="Gulab-Jamun.jpg" alt="Gulab Jamun">
+            <h3 class="recipe-title">Gulab Jamun</h3>
+            <p class="recipe-description">
+                Gulab jamun are soft milk-based balls, deep-fried and soaked in a sweet & rose-flavored syrup.
+            </p>
+            <button class="view-button" onclick="viewRecipe('Gulab Jamun')">View Recipe</button>
+        </div>
+    </div>
+
+    </div>
+    <script src="script-2.js"></script>
+</body>
+
+</html>
